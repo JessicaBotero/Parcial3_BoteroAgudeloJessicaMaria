@@ -2,7 +2,7 @@
 
 namespace Parcial3_BoteroAgudeloJessicaMaria.DAL.Entities
 {
-    public class Tickets
+    public class Ticket
     {
         [Required]
         public Guid Id { get; set; }
