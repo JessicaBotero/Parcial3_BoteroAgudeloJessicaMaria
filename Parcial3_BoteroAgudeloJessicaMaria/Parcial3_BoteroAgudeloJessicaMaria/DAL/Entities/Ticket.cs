@@ -14,6 +14,6 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.DAL.Entities
         public bool? IsUsed { get; set; }
 
         [Display(Name = "Porteria de entrada")]
-        public List<EntranceGate>? EntranceGate { get; set; }
+        public EntranceGate? EntranceGate { get; set; }
     }
 }
