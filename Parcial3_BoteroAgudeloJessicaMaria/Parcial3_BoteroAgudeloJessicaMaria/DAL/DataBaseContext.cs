@@ -14,14 +14,11 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.DAL
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);
-            modelBuilder.Entity<Ticket>().HasIndex(c => c.Id).IsUnique();
-            modelBuilder.Entity<EntranceGate>().HasIndex(c => c.Name).IsUnique();
+            base.OnModelCreating(modelBuilder);;
         }
 
 
         public DbSet<Ticket> Tickets { get; set; }
-        public DbSet<EntranceGate> EntranceGates { get; set; }
     }
 }
 
