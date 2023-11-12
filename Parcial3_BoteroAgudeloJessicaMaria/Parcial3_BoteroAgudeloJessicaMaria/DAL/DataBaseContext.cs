@@ -6,7 +6,7 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.DAL
 {
     public class DataBaseContext : DbContext
     {
-        
+
         public DataBaseContext(DbContextOptions<DataBaseContext> options) : base(options)
         {
 
@@ -19,10 +19,9 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.DAL
             modelBuilder.Entity<EntranceGate>().HasIndex(c => c.Name).IsUnique();
         }
 
-        
+
         public DbSet<Ticket> Tickets { get; set; }
         public DbSet<EntranceGate> EntranceGates { get; set; }
-}
     }
 }
-}
+
