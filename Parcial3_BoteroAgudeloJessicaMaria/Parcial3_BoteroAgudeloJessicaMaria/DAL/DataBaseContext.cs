@@ -14,7 +14,8 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.DAL
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(modelBuilder);;
+            base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Ticket>().HasIndex(t => t.Id).IsUnique();
         }
 
 

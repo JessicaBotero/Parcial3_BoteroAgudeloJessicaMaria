@@ -64,7 +64,6 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.Controllers
 
                 try
                 {
-                    ticket.UseDate = DateTime.Now;
                     _context.Add(ticket);
                     await _context.SaveChangesAsync();
                     return RedirectToAction(nameof(Index));
@@ -74,7 +73,7 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.Controllers
 
                     if (ex.InnerException.Message.Contains("duplicate"))
                     {
-                        ModelState.AddModelError(string.Empty, "Ya existe una entrada con ese número");
+                        ModelState.AddModelError(string.Empty, "Ya existe una boleta con ese Id");
                     }
                 }
                   
