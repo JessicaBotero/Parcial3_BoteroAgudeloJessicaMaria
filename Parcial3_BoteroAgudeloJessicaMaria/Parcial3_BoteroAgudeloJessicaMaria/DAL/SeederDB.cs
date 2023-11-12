@@ -37,7 +37,7 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.DAL
                             UseDate = null,
                             IsUsed = false,
                             EntranceGate = null,
-                            //  CreateDate = DateTime.Now,
+                            CreateDate = DateTime.Now,
                         }
                         );
                     }

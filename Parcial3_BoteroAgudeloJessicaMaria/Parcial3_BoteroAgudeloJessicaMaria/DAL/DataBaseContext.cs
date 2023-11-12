@@ -12,6 +12,9 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.DAL
 
         }
 
+        public DbSet<Ticket> Tickets { get; set; }
+
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
@@ -19,7 +22,7 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.DAL
         }
 
 
-        public DbSet<Ticket> Tickets { get; set; }
+     
     }
 }
 

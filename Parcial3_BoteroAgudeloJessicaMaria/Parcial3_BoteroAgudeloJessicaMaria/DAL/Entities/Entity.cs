@@ -6,7 +6,7 @@ namespace Parcial3_BoteroAgudeloJessicaMaria.DAL.Entities
     {
 
         [Key]
-        public virtual Guid IdP { get; set; }
+        public virtual Guid Id { get; set; }
 
         [Display(Name = "Fecha Creación")]
         public virtual DateTime? CreateDate { get; set; }
